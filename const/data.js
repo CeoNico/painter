@@ -37,31 +37,34 @@ export const socialLinks = [
 
 export const examples = [
   {
-    imgAntes: <Image src="/Concesionaria_Antes.jpg" width={300} height={300} />,
-    imgDespues: <Image src="/Concesionaria_Despues.jpg" width={300} height={300} />,
+    imgAntes: "/Edificio_Antes.jpg",
+    imgDespues: "/Edificio_Despues.jpg",
     label: "Nuestros Favoritos",
     subtext:
       "Mira un poco sobre nuestros trabajos favoritos que hemos realizado!",
+    category: 'favorites'
   },
   {
-    imgAntes: <Image src="/Casa_Exterior_Antes.jpg" width={300} height={300} />,
-    imgDespues: <Image src="/Casa_Exterior_Despues.jpg" width={300} height={300} />,
+    imgAntes: "/Casa_Exterior_Antes.jpg",
+    imgDespues: "/Casa_Exterior_Despues.jpg",
     label: "Trabajos en el exterior",
     subtext:
       "Disfruta unos ejemplos de los trabajos que hicimos en el exterior del lo pintado",
+    category: 'exteriores'
   },
   {
-    imgAntes: <Image src="/House_Antes.jpg" width={300} height={300} />,
-    imgDespues: <Image src="/House_Despues.jpg" width={300} height={300} />,
+    imgAntes: "/House_Antes.jpg",
+    imgDespues: "/House_Despues.jpg",
     label: "Trabajos en el interior",
     subtext:
       "Disfruta unos ejemplos de los trabajos que hicimos en el exterior del lo pintado",
+      category: "interiores"
   },
 ];
 
 export const reviews = [
   {
-    //imgURL: Url Here,
+    imgURL: "/headshot.jpg",
     //logoURL: Url Here,
     customerName: "Concessionaria de Toyota",
     feedback:

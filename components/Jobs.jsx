@@ -1,29 +1,21 @@
-"use client";
+
 import { examples } from "@/const/data";
-import  { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import JobCard from "./JobCard";
 
 const Jobs = () => {
-  const [isActive, setIsActive] = useState(false);
-
   return (
-    <div className="h-screen p-2">
-      <div className="">
-        {examples.map((item) => (
-          <div className="flex items-center flex-col text-center">
-            <h1>{item.label}</h1>
-            <p>{item.subtext}</p>
-            <div className="">
-              {isActive ? item.imgDespues : item.imgAntes}
-              <div className="flex gap-2 items-center justify-center">
-                <button onClick={() => setIsActive(false)}><FaArrowLeft className="text-black" size={30} /></button>
-                <button onClick={() => setIsActive(true)}><FaArrowRight className="text-black" size={30} /></button>
-              </div>
-            </div>
-          </div>
-        ))}
+    <>
+      <div>
+        <h1 className="text-center text-5xl font-bold">Trabajos Realizados </h1>
       </div>
-    </div>
+      <div className=" w-full h-full">
+        <div className="grid grid-cols-1 items-center ">
+          {examples.map((example) => (
+            <JobCard imgSrc={example.imgAntes} label={example.label} subtext={example.subtext} key={example.label} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import { HiBars3 } from "react-icons/hi2";
 import { HiOutlineX } from "react-icons/hi";
 import Link from "next/link";
 import { NavLinks, socialLinks } from "@/const/data";
+import Image from "next/image";
 
 
 useState;
@@ -23,9 +24,7 @@ const Navbar = () => {
     <>
       <nav className="w-full h-24 flex items-center bg-white/50">
         <Link href="/">
-          <h1 className="text-black font-bold text-xl lg:text-2xl ml-2 lg:pr-5 hover:text-gray-500 ease-in-out duration-300 transition">
-            LOGO HERE
-          </h1>
+          <Image src="/logo.png" width={130} height={130}/>
         </Link>
         <div className="hidden lg:flex w-full justify-evenly items-center">
           {NavLinks.map((link) => (
